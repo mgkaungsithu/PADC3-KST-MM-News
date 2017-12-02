@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_publication_logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/img_dummy_publication"
+        android:layout_marginLeft="8dp"
+       />
+    <TextView
+        android:id="@+id/tv_publication_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_publication_logo"
+        android:text="Eleven Media"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_posted_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posted At:Jan01 - 6:30AM "
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/tv_publication_title"
+        android:layout_toRightOf="@id/iv_publication_logo"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/tv_news_brief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp"
+        android:layout_below="@id/iv_publication_logo"
+        android:lineSpacingMultiplier="1.3"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="ဒေါ်အောင်ဆန်းစုကြည်နှင့် တရုတ်သမ္မတစီကျင်းပင်တို့ တွေ့ဆုံ၍ နှစ်နိုင်ငံဆက်လက်ပူးပေါင်းဆောင်ရွက်ရေးကိစ္စရပ်များ ဆွေးနွေး"/>
+    <ImageView
+        android:id="@+id/img_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_dummy_news"
+        android:layout_below="@id/tv_news_brief"
+        android:layout_marginTop="8dp"/>
+</RelativeLayout>
