@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_top_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_one_football_icon"
+                    android:drawablePadding="4dp"
+                    android:padding="8dp"
+                    android:text="Top News"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_soccer"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/tv_top_news"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_dummy_news" />
+
+                <TextView
+                    android:id="@+id/tv_news_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_soccer"
+                    android:layout_marginLeft="16dp"
+                    android:drawableLeft="@drawable/ic_favorite_border_black_36dp"
+                    android:drawablePadding="4dp"
+                    android:text="@string/soccer_news_title"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_one_football"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tv_news_title"
+                    android:layout_below="@+id/tv_news_title"
+                    android:layout_marginTop="17dp"
+                    android:drawableLeft="@drawable/img_one_football_icon"
+                    android:drawablePadding="4dp"
+                    android:text="Onefootball" />
+
+                <View
+                    android:id="@+id/v_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_one_football"
+                    android:layout_marginTop="16dp"
+                    android:background="#bdbdbd" />
+
+                <LinearLayout
+                    android:id="@+id/ll_news1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v_view1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_image_1"
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_dummy_news" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_one_football_for_news1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_news_title"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+
+                            android:drawableLeft="@drawable/img_one_football_icon"
+                            android:drawablePadding="4dp"
+                            android:text="Onefootball" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/v_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ll_news1"
+                    android:background="#bdbdbd" />
+
+                <LinearLayout
+                    android:id="@+id/ll_news2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v_view2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_image_2"
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_dummy_news" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_soccer_new2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="@string/news2"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_one_football_for_news2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_news_title"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableLeft="@drawable/img_one_football_icon"
+                            android:drawablePadding="4dp"
+                            android:text="Onefootball" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/v_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ll_news2"
+                    android:background="#bdbdbd" />
+
+                <LinearLayout
+                    android:id="@+id/ll_news3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v_view3"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_image_3"
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_dummy_news" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_soccer_new3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="@string/news3"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_one_football_for_news3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_news_title"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableLeft="@drawable/img_dummy_publication_logo"
+                            android:drawablePadding="4dp"
+                            android:text="Onefootball" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/v_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ll_news3"
+                    android:background="#bdbdbd" />
+
+                <LinearLayout
+                    android:id="@+id/ll_news4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v_view4"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_image_4"
+                        android:layout_width="110dp"
+                        android:layout_height="60dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_dummy_news" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_soccer_new4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="@string/news4"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_one_football_for_news4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_news_title"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableLeft="@drawable/img_dummy_publication_logo"
+                            android:drawablePadding="4dp"
+                            android:text="Onefootball" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_soccer_new1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ll_news1"
+                    android:layout_toEndOf="@+id/tv_top_news"
+                    android:text="@string/news1"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

@@ -22,45 +22,46 @@ import xyz.kaungsithu.news.network.responses.GetNewsResponse;
 public class RetrofitDataAgent implements NewsDataAgent {
 
 
+    private static RetrofitDataAgent sObjInstance;
 
-    private static RetrofitDataAgent sObjectInstance;
+    private NewsApi newsApi;
 
-    private NewsApi mNewsApi;
-
-    private RetrofitDataAgent(){
+    private RetrofitDataAgent() {
         OkHttpClient httpClient = new OkHttpClient.Builder()
                 .connectTimeout(15, TimeUnit.SECONDS)
                 .writeTimeout(15, TimeUnit.SECONDS)
                 .readTimeout(60, TimeUnit.SECONDS)
                 .build();
 
-        Retrofit retrofit=new Retrofit.Builder()
-                .baseUrl("http://padcmyanmar.com/padc-3/mm-news/apis/v1")
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://padcmyanmar.com/padc-3/mm-news/apis/v1/")
                 .addConverterFactory(GsonConverterFactory.create(new Gson()))
                 .client(httpClient)
                 .build();
-        NewsApi newsApi=retrofit.create(NewsApi.class);
+        newsApi = retrofit.create(NewsApi.class);
 
 
     }
-    public static RetrofitDataAgent getsObjectInstance(){
-        if (sObjectInstance==null)
-            sObjectInstance=new RetrofitDataAgent();
-        return sObjectInstance;
+
+    public static RetrofitDataAgent getObjInstance() {
+        if (sObjInstance == null)
+            sObjInstance = new RetrofitDataAgent();
+        return sObjInstance;
     }
+
     @Override
-    public void loadNews(){
+    public void loadNews() {
 
-        Call<GetNewsResponse> getNewsResponseCall=mNewsApi.loadNews(1,"b002c7e1a528b7cb460933fc2875e916");
+        Call<GetNewsResponse> getNewsResponseCall = newsApi.loadNews(1, "b002c7e1a528b7cb460933fc2875e916");
         getNewsResponseCall.enqueue((new Callback<GetNewsResponse>() {
             @Override
             public void onResponse(Call<GetNewsResponse> call, Response<GetNewsResponse> response) {
-                GetNewsResponse getNewsResponse=response.body();
-                if (getNewsResponse!=null){
-                    LoadedNewsEvent event=new LoadedNewsEvent((getNewsResponse.getMmNews()));
+                GetNewsResponse getNewsResponse = response.body();
+                if (getNewsResponse != null) {
+                    LoadedNewsEvent event = new LoadedNewsEvent((getNewsResponse.getMmNews()));
                     EventBus.getDefault().post(event);
                 }
-                LoadedNewsEvent event=new LoadedNewsEvent(getNewsResponse.getMmNews());
+                //LoadedNewsEvent event=new LoadedNewsEvent(getNewsResponse.getMmNews());
             }
 
             @Override

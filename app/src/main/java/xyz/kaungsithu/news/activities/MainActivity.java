@@ -27,7 +27,7 @@ import xyz.kaungsithu.news.delegates.NewsActionDelegate;
 import xyz.kaungsithu.news.event.LoadedNewsEvent;
 import xyz.kaungsithu.news.R;
 
-public class MainActivity extends AppCompatActivity
+public class  MainActivity extends AppCompatActivity
         implements NewsActionDelegate {
 
     @BindView(R.id.rv_news)

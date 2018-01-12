@@ -25,25 +25,26 @@ import xyz.kaungsithu.news.network.responses.GetNewsResponse;
 
 public class OKHttpDataAgent implements NewsDataAgent {
 
-    private static OKHttpDataAgent objectInstance;
+    private static OKHttpDataAgent objInstance;
 
 
-   private OKHttpDataAgent() {
+    private OKHttpDataAgent() {
 
-   }
+    }
 
-   public static OKHttpDataAgent getObjectInstance() {
-       if (objectInstance == null) {
-            objectInstance = new OKHttpDataAgent();
+    public static OKHttpDataAgent getObjectInstance() {
+        if (objInstance == null) {
+            objInstance = new OKHttpDataAgent();
         }
-        return objectInstance;   }
+        return objInstance;
+    }
 
     @Override
     public void loadNews() {
-        new LoadedNewsTask().execute("http://padcmyanmar.com/padc-3/mm-news/apis/v1/getMMNews.php");
+        new LoadNewsTask().execute("http://padcmyanmar.com/padc-3/mm-news/apis/v1/getMMNews.php");
     }
 
-   private static class loadNewsTask extends AsyncTask<String, Void, String> {
+    private static class LoadNewsTask extends AsyncTask<String, Void, String> {
 
 
         @Override
@@ -52,7 +53,8 @@ public class OKHttpDataAgent implements NewsDataAgent {
 
             OkHttpClient httpClient = new OkHttpClient.Builder()
                     .connectTimeout(15, TimeUnit.SECONDS)
-                    .writeTimeout(15, TimeUnit.SECONDS).readTimeout(60, TimeUnit.SECONDS)
+                    .writeTimeout(15, TimeUnit.SECONDS)
+                    .readTimeout(60, TimeUnit.SECONDS)
                     .build();
 
             RequestBody formBody = new FormBody.Builder()
@@ -70,18 +72,18 @@ public class OKHttpDataAgent implements NewsDataAgent {
             try {
                 Response response = httpClient.newCall(request).execute();
                 if (response.isSuccessful() && response.body() != null) {
-                   String responseString = response.body().toString();
-                   return responseString;
-               }
+                    String responseString = response.body().toString();
+                    return responseString;
+                }
 
 
             } catch (IOException e) {
                 Log.e(MMNewsApp.LOG_TAG, e.getMessage());
 
-           }
+            }
 
 
-          return responsString;
+            return responsString;
 
 
         }
@@ -97,7 +99,8 @@ public class OKHttpDataAgent implements NewsDataAgent {
             eventBus.post(event);
         }
 
-   }
+
+    }
 
 
 }

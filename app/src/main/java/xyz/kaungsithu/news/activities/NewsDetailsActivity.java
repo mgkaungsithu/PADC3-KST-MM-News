@@ -7,12 +7,13 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import butterknife.*;
+import xyz.kaungsithu.news.R;
 
 import butterknife.ButterKnife;
 import xyz.kaungsithu.news.adapters.ImagesInNewsDetailsAdapter;
 
 /**
- * Created by Lenovo on 12/9/2017.
+ * Created by User on 12/9/2017.
  */
 
 public class NewsDetailsActivity extends AppCompatActivity {

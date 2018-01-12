@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import butterknife.*;
 
 import butterknife.ButterKnife;
 import xyz.kaungsithu.news.R;

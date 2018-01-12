@@ -9,10 +9,10 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import xyz.zzp.news.R;
-import xyz.zzp.news.data.vo.NewsVO;
-import xyz.zzp.news.delegates.NewsActionDelegate;
-import xyz.zzp.news.viewholders.ItemNewsViewHolder;
+import xyz.kaungsithu.news.R;
+import xyz.kaungsithu.news.data.vo.NewsVO;
+import xyz.kaungsithu.news.delegates.NewsActionDelegate;
+import xyz.kaungsithu.news.viewholders.ItemNewsViewHolder;
 
 /**
  * Created by Lenovo on 12/3/2017.
