@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_dummy_movie_details_bg" />
+
+                <FrameLayout
+                    android:id="@+id/fl_img"
+                    android:layout_width="170dp"
+                    android:layout_height="230dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_dummy_movie" />
+
+                    <ImageView
+                        android:id="@+id/iv_fullscreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:background="@color/icon_fullscreen_bg"
+                        android:src="@drawable/ic_fullscreen_black_36dp"
+                        android:tint="@color/icons" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_rating_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/ic_favorite_black_48dp"
+                    android:backgroundTint="@color/accent"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:text="7.4"
+                    android:textColor="@color/white_full"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_movie_details_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/fl_img"
+                    android:layout_toRightOf="@id/fl_img"
+                    android:text="Join the Jaeger Uprising"
+                    android:textColor="@color/white_full"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/fl_img"
+                    android:layout_alignLeft="@id/tv_movie_details_title"
+                    android:layout_below="@id/tv_movie_details_title"
+                    android:layout_marginRight="16dp"
+                    android:fillViewport="true">
+
+                    <TextView
+                        android:id="@+id/tv_movie_description"
+                        style="@style/white_text_black_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1"
+                        android:padding="4dp"
+                        android:text="@string/movie_first_details"
+                        android:textSize="12sp" />
+
+                </android.support.v4.widget.NestedScrollView>
+
+
+                <RatingBar
+                    android:id="@+id/rb_stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fl_img"
+                    android:layout_below="@+id/fl_img"
+                    android:layout_marginTop="4dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressTint="@color/rating"
+                    android:rating="4"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+                <TextView
+                    android:id="@+id/tv_release_date"
+                    style="@style/white_text_black_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/fl_img"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="In Production : January 2018"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_add_black_36dp"
+        android:tint="@color/white_full"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|right" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/accent">
+
+            <TextView
+                android:id="@+id/tv_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rating"
+                android:fontFamily="Franklin Gothic"
+                android:padding="16dp"
+                android:text="Pacific Rim : Uprising"
+                android:textColor="@color/accent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_movie_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title_text"
+                android:background="@color/accent"
+                android:scrollbars="horizontal"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_movie_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_movie_types"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rounded_accent_border"
+                android:padding="8dp"
+                android:text="2 hrs 10 mins"
+                android:textColor="@color/white_full"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_movie_trailer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_movie_time"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tv_review_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_movie_trailer"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/review_title"
+                android:textColor="@color/white_full"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_movie_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_review_title"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

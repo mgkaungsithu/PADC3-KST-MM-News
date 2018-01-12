@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/accent">
+
+    <TextView
+        android:id="@+id/tv_movie_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gimly wrote :"
+        android:textColor="@color/white_full"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"/>
+    <TextView
+        android:id="@+id/tv_movie_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The film is one of the most entertaining of the MCU films so far and HUGE improvement over
+The film is one of the most entertaining of the MCU films so far and HUGE improvement over
+The film is one of the most entertaining of the MCU films so far and HUGE improvement over
+The film is one of the most entertaining of the MCU films so far and HUGE improvement overThe film is one of the most entertaining of the MCU films so far and HUGE improvement over
+The film is one of the most entertaining of the MCU films so far and HUGE improvement over
+The film is one of the most entertaining of the MCU films so far and HUGE improvement over
+"
+        android:textColor="@color/white_full"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:lineSpacingMultiplier="1"
+        />
+</LinearLayout>

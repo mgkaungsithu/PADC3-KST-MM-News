@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ass_Movie</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="first_activity">Movie Shelf</string>
+
+    <string name="movie_first_details">Pacific Rim Uprising is an upcoming American science fiction monster film directed by Steven S. DeKnight and written by DeKnight, Emily Carmichael, Kira Snyder, and T.S. Nowlin from a story by DeKnight and Nowlin. It is the sequel to the 2013 film Pacific Rim, and stars John Boyega, Scott Eastwood, Cailee Spaeny, Jing Tian, and Adria Arjona, with Charlie Day, Burn Gorman, and Rinko Kikuchi returning in their roles from the original film. It is scheduled to be released on March 23, 2018, by Universal Pictures.
+    <string name="movie_reviews">Pacific Rim Uprising is an upcoming American science fiction monster film directed by Steven S. DeKnight and written by DeKnight, Emily Carmichael, Kira Snyder, and T.S. Nowlin from a story by DeKnight and Nowlin. It is the sequel to the 2013 film Pacific Rim, and stars John Boyega, Scott Eastwood, Cailee Spaeny, Jing Tian, and Adria Arjona, with Charlie Day, Burn Gorman, and Rinko Kikuchi returning in their roles from the original film. It is scheduled to be released on March 23, 2018, by Universal Pictures.
+    Pacific Rim Uprising is an upcoming American science fiction monster film directed by Steven S. DeKnight and written by DeKnight, Emily Carmichael, Kira Snyder, and T.S. Nowlin from a story by DeKnight and Nowlin. It is the sequel to the 2013 film Pacific Rim, and stars John Boyega, Scott Eastwood, Cailee Spaeny, Jing Tian, and Adria Arjona, with Charlie Day, Burn Gorman, and Rinko Kikuchi returning in their roles from the original film. It is scheduled to be released on March 23, 2018, by Universal Pictures.
+    Pacific Rim Uprising is an upcoming American science fiction monster film directed by Steven S. DeKnight and written by DeKnight, Emily Carmichael, Kira Snyder, and T.S. Nowlin from a story by DeKnight and Nowlin. It is the sequel to the 2013 film Pacific Rim, and stars John Boyega, Scott Eastwood, Cailee Spaeny, Jing Tian, and Adria Arjona, with Charlie Day, Burn Gorman, and Rinko Kikuchi returning in their roles from the original film. It is scheduled to be released on March 23, 2018, by Universal Pictures.</string>
+</string>
+    <string name="review_title"><u>Reviews</u></string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:\PADC\PADC-3-F-ZZP-Movie.git\PADC-3-F-ZZP-Movie.iml" filepath="D:\PADC\PADC-3-F-ZZP-Movie.git\PADC-3-F-ZZP-Movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PADC-3-F-ZZP-Movie.git.iml" filepath="$PROJECT_DIR$/PADC-3-F-ZZP-Movie.git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
