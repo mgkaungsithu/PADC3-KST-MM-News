@@ -198,7 +198,7 @@
                             android:layout_below="@id/tv_news_title"
                             android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:drawableLeft="@drawable/img_dummy_publication_logo"
+                            android:drawableLeft="@drawable/img_one_football_icon"
                             android:drawablePadding="4dp"
                             android:text="Onefootball" />
                     </LinearLayout>
@@ -248,7 +248,7 @@
                             android:layout_below="@id/tv_news_title"
                             android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:drawableLeft="@drawable/img_dummy_publication_logo"
+                            android:drawableLeft="@drawable/img_one_football_icon"
                             android:drawablePadding="4dp"
                             android:text="Onefootball" />
                     </LinearLayout>
